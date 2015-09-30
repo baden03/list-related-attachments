@@ -5,8 +5,8 @@ list-related-attachments
 * Donate link: http://plugins.twinpictures.de/plugins/list-related-attachments/
 * Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
 * Requires at least: 3.9
-* Tested up to: 4.3
-* Stable tag: 2.1.0
+* Tested up to: 4.3.1
+* Stable tag: 2.1.1
 
 Description
 -----------
