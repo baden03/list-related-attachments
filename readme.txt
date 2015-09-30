@@ -56,6 +56,7 @@ We like to rock the party.
 == Changelog ==
 
 = 2.1.1 =
+* adjusted php5 constructor play well with older php versions
 * changed text domain so it works with new WordPress Translation service
 
 = 2.1.0 =
@@ -109,5 +110,5 @@ We like to rock the party.
 * The plugin came to be.
 
 == Upgrade Notice ==
-= 2.1.0 =
-* uses new php5 constructor, tested with WordPress version 4.3 RC-1
+= 2.1.1 =
+adjusted php5 constructor again. changed text domain so it works with new WordPress Translation service
