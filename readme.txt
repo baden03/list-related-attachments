@@ -3,8 +3,8 @@ Contributors: twinpictures, baden03
 Donate link: http://plugins.twinpictures.de/plugins/list-related-attachments/
 Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
 Requires at least: 3.9
-Tested up to: 4.3.1
-Stable tag: 2.1.1
+Tested up to: 4.4.0
+Stable tag: 2.1.2a
 
 Listed Related Attachments will display a filtered list of all related attachments for the current post or page.
 
@@ -54,6 +54,9 @@ We like to rock the party.
 1. Hide your kids, hide your husband, this is how the shortcode works.
 
 == Changelog ==
+
+= 2.1.2 =
+* added new parent_id attribute to override current page
 
 = 2.1.1 =
 * adjusted php5 constructor play well with older php versions

@@ -5,7 +5,7 @@ Text Domain: list-related-attachments-widget
 Domain Path: /languages
 Plugin URI: http://plugins.twinpictures.de/plugins/list-related-attachments/
 Description: Display a filtered list of all related attachments linked to the current post or page
-Version: 2.1.1
+Version: 2.1.2a
 Author: twinpictures, baden03
 Author URI: http://twinpictures.de/
 License: GPL2
@@ -24,7 +24,7 @@ class WP_Plugin_LRA {
 	 * @var string
 	 */
 	var $plugin_name = 'List Related Attachments';
-	var $version = '2.1.1';
+	var $version = '2.1.2a';
 	var $domain = 'lra';
 
 	/**
@@ -104,16 +104,17 @@ class WP_Plugin_LRA {
 	 */
 	function shortcode($atts, $content = null){
 		global $wp_query;
-                if(!empty($wp_query->post->ID)):
+        //if(!empty($wp_query->post->ID)):
 			extract(shortcode_atts(array(
-				    'type' => 'application',
-				    'count' => -1,
-				    'orderby' => 'date',
-				    'order' => 'DESC',
-				    'show' => 'title',
-				    'target' => 'self',
-				    'link_to' => 'file'
-				), $atts));
+					    'type' => 'application',
+					    'count' => -1,
+					    'orderby' => 'date',
+					    'order' => 'DESC',
+					    'show' => 'title',
+					    'target' => 'self',
+					    'link_to' => 'file',
+						'parent_id' => $wp_query->post->ID,
+			), $atts));
 
 			$args = array(
 				'post_type' => 'attachment',
@@ -121,7 +122,7 @@ class WP_Plugin_LRA {
 				'numberposts' => $count,
 				'orderby' => $orderby,
 				'order' => $order,
-				'post_parent' => $wp_query->post->ID
+				'post_parent' => $parent_id,
 			);
 
 			$attachments = get_children($args);
@@ -153,7 +154,7 @@ class WP_Plugin_LRA {
 			    $lra .= '</ul>';
 			}
 			return $lra;
-		endif;
+		//endif;
 	}
 
 	// Add link to options page from plugin list
