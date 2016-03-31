@@ -24,6 +24,7 @@ class WP_Plugin_LRA {
 	 */
 	var $plugin_name = 'List Related Attachments';
 	var $version = '2.1.3';
+	var $domain = 'lra';
 
 	/**
 	 * Options page
