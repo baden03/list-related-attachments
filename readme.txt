@@ -2,14 +2,14 @@
 Contributors: twinpictures, baden03
 Donate link: http://plugins.twinpictures.de/plugins/list-related-attachments/
 Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
-Requires at least: 3.9
-Tested up to: 4.4.0
-Stable tag: 2.1.2a
+Requires at least: 4.0
+Tested up to: 4.5
+Stable tag: 2.1.3
 
 Listed Related Attachments will display a filtered list of all related attachments for the current post or page.
 
 == Description ==
-List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A <a href='http://plugins.twinpictures.de/plugins/list-related-attachments/documentation/'>complete listing of shortcode options and attribute demos</a> are available that delight and inform. What's more, there is <a href='http://wordpress.org/support/plugin/list-related-attachments-widget'>excellent and free community support</a> and a super-duper online <a href=“http://translate.twinpictures.de/projects/list-related-attachments”>language translation tool</a> to roll-your-own language files.
+List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A <a href='http://plugins.twinpictures.de/plugins/list-related-attachments/documentation/'>complete listing of shortcode options and attribute demos</a> are available that delight and inform. What's more, there is <a href='http://wordpress.org/support/plugin/list-related-attachments-widget'>excellent and free community support</a> and a super-duper online <a href=“https://translate.wordpress.org/projects/wp-plugins/list-related-attachments-widget”>language translation tool</a> to roll-your-own language files.
 
 == Installation ==
 1. Old-school: upload the `List Related Attachments` folder to the `/wp-content/plugins/` directory via FTP.  Hipster: Add the plugin via the WordPress Plugins menu.
@@ -54,6 +54,10 @@ We like to rock the party.
 1. Hide your kids, hide your husband, this is how the shortcode works.
 
 == Changelog ==
+
+= 2.1.3 =
+* supports WordPress language packs, no longer ships with all languages
+* fully tested with WordPress 4.5
 
 = 2.1.2 =
 * added new parent_id attribute to override current page

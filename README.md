@@ -6,7 +6,7 @@ list-related-attachments
 * Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
 * Requires at least: 3.9
 * Tested up to: 4.4.0
-* Stable tag: 2.1.2b
+* Stable tag: 2.1.3
 
 Description
 -----------
