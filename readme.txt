@@ -117,5 +117,5 @@ We like to rock the party.
 * The plugin came to be.
 
 == Upgrade Notice ==
-= 2.1.1 =
-adjusted php5 constructor again. changed text domain so it works with new WordPress Translation service
+Removed languages in favour of WordPress Language Packs.
+Fully tested with WordPress 4.5
