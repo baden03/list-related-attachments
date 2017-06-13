@@ -1,15 +1,15 @@
 === List Related Attachments ===
 Contributors: twinpictures, baden03
-Donate link: http://plugins.twinpictures.de/plugins/list-related-attachments/
+Donate link: https://plugins.twinpictures.de/plugins/list-related-attachments/
 Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
 Requires at least: 4.0
-Tested up to: 4.5
-Stable tag: 2.1.3
+Tested up to: 4.8
+Stable tag: 2.1.4
 
 Listed Related Attachments will display a filtered list of all related attachments for the current post or page.
 
 == Description ==
-List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A <a href='http://plugins.twinpictures.de/plugins/list-related-attachments/documentation/'>complete listing of shortcode options and attribute demos</a> are available that delight and inform. What's more, there is <a href='http://wordpress.org/support/plugin/list-related-attachments-widget'>excellent and free community support</a> and a super-duper online <a href=“https://translate.wordpress.org/projects/wp-plugins/list-related-attachments-widget”>language translation tool</a> to roll-your-own language files.
+List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A <a href='https://plugins.twinpictures.de/plugins/list-related-attachments/documentation/'>complete listing of shortcode options and attribute demos</a> are available that delight and inform. What's more, there is <a href='https://wordpress.org/support/plugin/list-related-attachments-widget'>excellent and free community support</a> and a super-duper online <a href=“https://translate.wordpress.org/projects/wp-plugins/list-related-attachments-widget”>language translation tool</a> to roll-your-own language files.
 
 == Installation ==
 1. Old-school: upload the `List Related Attachments` folder to the `/wp-content/plugins/` directory via FTP.  Hipster: Add the plugin via the WordPress Plugins menu.
@@ -19,7 +19,7 @@ List Related Attachments is a sidebar widget and shortcode that will display a f
 1. Add a the shortcode to your post like so: `[list-related-attach type="application/zip" count="3" orderby="title" order="ASC" show="caption"]`
 1. Test that the this plugin meets your demanding needs.
 1. Rate the plugin and verify that it works at wordpress.org.
-1. Leave a comment regarding bugs, feature request, cocktail recipes at: http://wordpress.org/support/plugin/list-related-attachments-widget
+1. Leave a comment regarding bugs, feature request, cocktail recipes at: https://wordpress.org/support/plugin/list-related-attachments-widget
 
 == Frequently Asked Questions ==
 = What are the default shortcode attributes? =
@@ -34,10 +34,10 @@ List Related Attachments is a sidebar widget and shortcode that will display a f
 Gin Basel Smash
 
 = I am a Social Netwookiee, do you have a Facebook page? =
-Yes, yes... <a href='http://www.facebook.com/twinpictures'>Twinpictures is on Facebook</a>.
+Yes, yes... <a href='https://www.facebook.com/twinpictures'>Twinpictures is on Facebook</a>.
 
 = Does Twinpictures do the Twitter? =
-Ah yes! <a href='http://twitter.com/#!/twinpictures'>@Twinpictures</a> does the twitter tweeting around here.
+Ah yes! <a href='https://twitter.com/twinpictures'>@Twinpictures</a> does the twitter tweeting around here.
 
 = Where can I go for jokes and fun? =
 Why not try: <a href='http://jokesandfun.de/'>Jokes & Fun</a>
@@ -54,6 +54,9 @@ We like to rock the party.
 1. Hide your kids, hide your husband, this is how the shortcode works.
 
 == Changelog ==
+
+= 2.1.4 =
+* fully tested with WordPress 4.8
 
 = 2.1.3 =
 * supports WordPress language packs, no longer ships with all languages
@@ -88,7 +91,7 @@ We like to rock the party.
 = 1.7 =
 * Added the ability to chose a target for the attachment (for example a new tab)
 * Expanded the display/show attribute to list multiple attributes such as title - caption or title (description)
-* A big Thank You to oldbrit (http://wordpress.org/support/profile/oldbrit) suggesting these ideas! (http://wordpress.org/support/topic/plugin-list-related-attachments-title-caption-or-description)
+* A big Thank You to oldbrit (https://wordpress.org/support/profile/oldbrit) suggesting these ideas! (https://wordpress.org/support/topic/plugin-list-related-attachments-title-caption-or-description/)
 
 = 1.6.1 =
 * Vastly enhanced documentation and moved the plugin over to the plugin oven.
@@ -117,5 +120,4 @@ We like to rock the party.
 * The plugin came to be.
 
 == Upgrade Notice ==
-Removed languages in favour of WordPress Language Packs.
-Fully tested with WordPress 4.5
+Fully tested with WordPress 4.8

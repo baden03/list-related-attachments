@@ -2,11 +2,11 @@ list-related-attachments
 ========================
 
 * Contributors: twinpictures, baden03
-* Donate link: http://plugins.twinpictures.de/plugins/list-related-attachments/
+* Donate link: https://plugins.twinpictures.de/plugins/list-related-attachments/
 * Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
-* Requires at least: 3.9
-* Tested up to: 4.5
-* Stable tag: 2.1.3
+* Requires at least: 4.0
+* Tested up to: 4.8
+* Stable tag: 2.1.4
 
 Description
 -----------
