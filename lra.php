@@ -4,7 +4,7 @@ Plugin Name: List Related Attachments
 Text Domain: list-related-attachments-widget
 Plugin URI: http://plugins.twinpictures.de/plugins/list-related-attachments/
 Description: Display a filtered list of all related attachments linked to the current post or page
-Version: 2.1.3
+Version: 2.1.4
 Author: twinpictures, baden03
 Author URI: http://twinpictures.de/
 License: GPL2
@@ -23,7 +23,7 @@ class WP_Plugin_LRA {
 	 * @var string
 	 */
 	var $plugin_name = 'List Related Attachments';
-	var $version = '2.1.3';
+	var $version = '2.1.4';
 	var $domain = 'lra';
 
 	/**

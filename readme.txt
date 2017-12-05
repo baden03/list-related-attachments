@@ -2,8 +2,8 @@
 Contributors: twinpictures, baden03
 Donate link: https://plugins.twinpictures.de/plugins/list-related-attachments/
 Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
-Requires at least: 4.0
-Tested up to: 4.8
+Requires at least: 4.5
+Tested up to: 4.9.1
 Stable tag: 2.1.4
 
 Listed Related Attachments will display a filtered list of all related attachments for the current post or page.
@@ -56,7 +56,7 @@ We like to rock the party.
 == Changelog ==
 
 = 2.1.4 =
-* fully tested with WordPress 4.8
+* fully tested with WordPress 4.9.1
 
 = 2.1.3 =
 * supports WordPress language packs, no longer ships with all languages
@@ -120,4 +120,4 @@ We like to rock the party.
 * The plugin came to be.
 
 == Upgrade Notice ==
-Fully tested with WordPress 4.8
+Fully tested with WordPress 4.9.1
