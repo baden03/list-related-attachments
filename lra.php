@@ -2,11 +2,11 @@
 /*
 Plugin Name: List Related Attachments
 Text Domain: list-related-attachments-widget
-Plugin URI: http://plugins.twinpictures.de/plugins/list-related-attachments/
+Plugin URI: https://plugins.twinpictures.de/plugins/list-related-attachments/
 Description: Display a filtered list of all related attachments linked to the current post or page
-Version: 2.1.4
+Version: 2.1.5
 Author: twinpictures, baden03
-Author URI: http://twinpictures.de/
+Author URI: https://twinpictures.de/
 License: GPL2
 */
 
@@ -23,7 +23,7 @@ class WP_Plugin_LRA {
 	 * @var string
 	 */
 	var $plugin_name = 'List Related Attachments';
-	var $version = '2.1.4';
+	var $version = '2.1.5';
 	var $domain = 'lra';
 
 	/**
@@ -103,17 +103,16 @@ class WP_Plugin_LRA {
 	 */
 	function shortcode($atts, $content = null){
 		global $wp_query;
-        //if(!empty($wp_query->post->ID)):
-			extract(shortcode_atts(array(
-					    'type' => 'application',
-					    'count' => -1,
-					    'orderby' => 'date',
-					    'order' => 'DESC',
-					    'show' => 'title',
-					    'target' => 'self',
-					    'link_to' => 'file',
-						'parent_id' => $wp_query->post->ID,
-			), $atts));
+			$atts = shortcode_atts(array(
+							'type' => 'application',
+							'count' => -1,
+							'orderby' => 'date',
+							'order' => 'DESC',
+							'show' => 'title',
+							'target' => 'self',
+							'link_to' => 'file',
+							'parent_id' => $wp_query->post->ID,
+					), $atts, 'list-related-attach' );
 
 			$args = array(
 				'post_type' => 'attachment',
@@ -182,8 +181,8 @@ class WP_Plugin_LRA {
 						__('tasted great, while also being less filling', 'list-related-attachments-widget'),
 						__('caused you to shout: "everybody spread love, give me some mo!"', 'list-related-attachments-widget'),
 						__('helped you keep the funk alive', 'list-related-attachments-widget'),
-						__('<a href="http://www.youtube.com/watch?v=dvQ28F5fOdU" target="_blank">soften hands while you do dishes</a>', 'list-related-attachments-widget'),
-						__('helped that little old lady <a href="http://www.youtube.com/watch?v=Ug75diEyiA0" target="_blank">find the beef</a>', 'list-related-attachments-widget')
+						__('<a href="https://www.youtube.com/watch?v=dvQ28F5fOdU" target="_blank">soften hands while you do dishes</a>', 'list-related-attachments-widget'),
+						__('helped that little old lady <a href="https://www.youtube.com/watch?v=Ug75diEyiA0" target="_blank">find the beef</a>', 'list-related-attachments-widget')
 					);
 	$rand_key = array_rand($like_it_arr);
 	$like_it = $like_it_arr[$rand_key];
@@ -232,13 +231,13 @@ class WP_Plugin_LRA {
 					<h3 class="handle"><?php _e( 'About', 'list-related-attachments-widget' ) ?></h3>
 					<div class="inside">
 						<h4><?php echo $this->plugin_name; ?> <?php _e('Version', 'list-related-attachments-widget'); ?> <?php echo $this->version; ?></h4>
-						<p><?php printf( __('List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A %scomplete listing of shortcode options and attribute demos%s are available that delight and inform. What\'s more, %sexcellent and free community support%s is available. Oh, one more thing: The plugin can be translated into any language using our %scommunity translation tool%s.', 'list-related-attachments-widget') ,'<a href="http://plugins.twinpictures.de/plugins/list-related-attachments/documentation/">','</a>', '<a href="http://wordpress.org/support/plugin/list-related-attachments-widget">', '</a>', '<a href="http://translate.twinpictures.de/projects/list-related-attachments">', '</a>') ?></p>
+						<p><?php printf( __('List Related Attachments is a sidebar widget and shortcode that will display a filtered, sorted and ordered list of all related attachments linked to current post or page. The widget options are: title, number of attachments to display, type of attachment to display by mime/type, order by value, order direction and what should be displayed (attachment title, caption or description).  A %scomplete listing of shortcode options and attribute demos%s are available that delight and inform. What\'s more, %sexcellent and free community support%s is available. Oh, one more thing: The plugin can be translated into any language using our %scommunity translation tool%s.', 'list-related-attachments-widget') ,'<a href="https://plugins.twinpictures.de/plugins/list-related-attachments/documentation/">','</a>', '<a href="https://wordpress.org/support/plugin/list-related-attachments-widget">', '</a>', '<a href="https://translate.twinpictures.de/projects/list-related-attachments">', '</a>') ?></p>
 						<ul>
 							<li>
-								<?php printf( __( '%sDetailed documentation%s, complete with working demonstrations of all shortcode attributes, is available for your instructional enjoyment.', 'list-related-attachments-widget'), '<a href="http://plugins.twinpictures.de/plugins/list-related-attachments/documentation/" target="_blank">', '</a>'); ?>
+								<?php printf( __( '%sDetailed documentation%s, complete with working demonstrations of all shortcode attributes, is available for your instructional enjoyment.', 'list-related-attachments-widget'), '<a href="https://plugins.twinpictures.de/plugins/list-related-attachments/documentation/" target="_blank">', '</a>'); ?>
 							</li>
-							<li><?php printf( __('If this plugin %s, please consider %ssharing your story%s with others.', 'list-related-attachments-widget'), $like_it, '<a href="http://www.facebook.com/twinpictures" target="_blank">', '</a>' ) ?></li>
-							<li><?php printf( __('Your %sreviews%s, %sbug-reports, feedback%s and %scocktail recipes%s are always welcomed.', 'list-related-attachments-widget'), '<a href="http://wordpress.org/support/view/plugin-reviews/list-related-attachments-widget">', '</a>', '<a href="http://wordpress.org/support/plugin/list-related-attachments-widget">', '</a>', '<a href="http://www.facebook.com/twinpictures">', '</a>'); ?></li>
+							<li><?php printf( __('If this plugin %s, please consider %ssharing your story%s with others.', 'list-related-attachments-widget'), $like_it, '<a href="https://www.facebook.com/twinpictures" target="_blank">', '</a>' ) ?></li>
+							<li><?php printf( __('Your %sreviews%s, %sbug-reports, feedback%s and %scocktail recipes%s are always welcomed.', 'list-related-attachments-widget'), '<a href="https://wordpress.org/support/view/plugin-reviews/list-related-attachments-widget">', '</a>', '<a href="https://wordpress.org/support/plugin/list-related-attachments-widget">', '</a>', '<a href="https://www.facebook.com/twinpictures">', '</a>'); ?></li>
 						</ul>
 					</div>
 				</div>
@@ -289,8 +288,8 @@ class LRA_Widget extends WP_Widget {
 
 	}
 
-    /** Widget */
-    function widget($args, $instance) {
+  /** Widget */
+  function widget($args, $instance) {
 
 	global $wp_query;
 	extract($args);
@@ -369,9 +368,9 @@ class LRA_Widget extends WP_Widget {
 	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'list-related-attachments-widget'); ?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
 	<p><label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Number of attachments to display:', 'list-related-attachments-widget'); ?></label> <input class="widefat" style="width: 50px;" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>" type="number" value="<?php echo esc_attr($count); ?>" /></p>
 	<p><label for="<?php echo $this->get_field_id('type'); ?>"><?php _e('Attachment Mime/Type', 'list-related-attachments-widget'); ?>: <input class="widefat" id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>" type="text" value="<?php echo $type; ?>" /></label>
-	<a class="description" href="http://en.wikipedia.org/wiki/MIME_type#List_of_common_media_types" target="_blank"><?php _e('list of common mime/types', 'list-related-attachments-widget'); ?></a></p>
+	<a class="description" href="https://en.wikipedia.org/wiki/MIME_type#List_of_common_media_types" target="_blank"><?php _e('list of common mime/types', 'list-related-attachments-widget'); ?></a></p>
 	<p><label for="<?php echo $this->get_field_id('orderby'); ?>"><?php _e('Order By', 'list-related-attachments-widget'); ?>: <input class="widefat" id="<?php echo $this->get_field_id('orderby'); ?>" name="<?php echo $this->get_field_name('orderby'); ?>" type="text" value="<?php echo $orderby; ?>" /></label>
-	<a class="description" href="http://codex.wordpress.org/Function_Reference/query_posts#Orderby_Parameters" target="_blank"><?php _e('list of orderby values', 'list-related-attachments-widget'); ?></a></p>
+	<a class="description" href="https://codex.wordpress.org/Function_Reference/query_posts#Orderby_Parameters" target="_blank"><?php _e('list of orderby values', 'list-related-attachments-widget'); ?></a></p>
 	<p><label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order Direction', 'list-related-attachments-widget'); ?>: <input class="widefat" id="<?php echo $this->get_field_id('order'); ?>" name="<?php echo $this->get_field_name('order'); ?>" type="text" value="<?php echo $order; ?>" /></label>
 	<span class="description"><?php _e('Valid values: ASC or DESC', 'list-related-attachments-widget'); ?></span></p>
 	<p><label for="<?php echo $this->get_field_id('display'); ?>"><?php _e('Display:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('display'); ?>" name="<?php echo $this->get_field_name('display'); ?>" type="text" value="<?php echo $display; ?>" /></label>
