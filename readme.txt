@@ -59,6 +59,7 @@ We like to rock the party.
 == Changelog ==
 
 = 2.1.5 =
+* replaced exctract with shortcode_atts function
 * fully tested with WordPress 5.1
 * updated http to https
 
