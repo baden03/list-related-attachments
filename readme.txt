@@ -4,7 +4,7 @@ Donate link: https://plugins.twinpictures.de/plugins/list-related-attachments/
 Tags: widget, list, related, attachments, sidebar, uploaded, files, shortcode, twinpictures, plugin-oven, plugin oven
 Requires at least: 4.7
 Tested up to: 5.1
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -57,6 +57,9 @@ We like to rock the party.
 1. Hide your kids, hide your husband, this is how the shortcode works.
 
 == Changelog ==
+
+= 2.1.6 =
+* fixed the shortcake attribute extract function
 
 = 2.1.5 =
 * replaced exctract with shortcode_atts function
